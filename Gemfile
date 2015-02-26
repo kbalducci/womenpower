@@ -62,7 +62,6 @@ group :test, :development do
   gem 'binding_of_caller'
 end
 source 'https://rails-assets.org' do
-  gem 'rails-assets-bootstrap'
   gem 'rails-assets-angular'
   gem 'rails-assets-angular-ui-router'
 end
