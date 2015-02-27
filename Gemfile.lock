@@ -252,6 +252,7 @@ DEPENDENCIES
   rails (= 4.2.0)
   rails-assets-angular!
   rails-assets-angular-ui-router!
+
   rails_12factor
   rspec
   rspec-rails
