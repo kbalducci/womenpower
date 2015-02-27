@@ -1,5 +1,8 @@
 class Inspiration < ActiveRecord::Base
   belongs_to :user
+  belongs_to :category
+  belongs_to :issue
+
   validates_presence_of :picture, :quote, :keyword
 
   has_attached_file :avatar,

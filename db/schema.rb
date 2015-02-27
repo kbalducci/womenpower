@@ -11,21 +11,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150227025638) do
+ActiveRecord::Schema.define(version: 20150227202945) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "inspirations", force: :cascade do |t|
-    t.text     "quote",      null: false
-    t.string   "keyword",    null: false
-    t.string   "person",     null: false
-    t.integer  "user_id"
+  create_table "categories", force: :cascade do |t|
+    t.string   "name",       null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "inspirations", force: :cascade do |t|
+    t.text     "quote",                null: false
+    t.string   "name",                 null: false
+    t.integer  "user_id"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
+    t.integer  "category_id"
+    t.integer  "issue_id"
+  end
+
+  add_index "inspirations", ["category_id"], name: "index_inspirations_on_category_id", using: :btree
+  add_index "inspirations", ["issue_id"], name: "index_inspirations_on_issue_id", using: :btree
   add_index "inspirations", ["user_id"], name: "index_inspirations_on_user_id", using: :btree
+
+  create_table "issues", force: :cascade do |t|
+    t.string   "name",        null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "category_id"
+  end
+
+  add_index "issues", ["category_id"], name: "index_issues_on_category_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name",                          null: false
