@@ -18,6 +18,12 @@ angular.module('app', ['app.controllers', 'ui.router'])
 		templateUrl: "templates/category.html",
 		controller: "CategoryCtrl"
 	})
+	$stateProvider
+	.state('student', {
+		url: "/student",
+		templateUrl: "templates/issues.html",
+		controller: "StudentCat"
+	})
 
 	$urlRouterProvider.otherwise("/dashboard");
 });

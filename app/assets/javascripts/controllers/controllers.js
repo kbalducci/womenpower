@@ -8,6 +8,9 @@ angular.module('app.controllers', [])
 .controller('CategoryCtrl', function($scope, $state) {
 	// $scope.test = 'hello';
 })
+.controller('StudentCat', function($scope, $state) {
+	// $scope.test = 'hello';
+})
 // .controller('SettingsCtrl', function($scope, $state) {
 // 	// $scope.test = 'hello';
 // 	// $scope.goHome = function() {
