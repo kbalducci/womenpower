@@ -1,3 +1,59 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Mixins */
+
+// @mixin grid ($col-num){
+//   width: ($col * $col-num)+($gut * (($col-num) - 1));
+//   margin-right: $gut;
+// }
+
+// @mixin specs {
+//   box-sizing: border-box;
+//   background: #777;
+//   display: inline-block;
+//   padding: 5px;
+//   margin-bottom: 5px;
+// }
+
+// /*Variables*/
+
+// $global: 100%;
+// $col: 6.29%;
+// $gut: 2.22%;
+
+
+// /* === global ===*/
+// .wrapper {
+//   background: pink;
+//   width: 90%;
+//   max-width: 900px;
+//   margin: 0 auto;
+// }
+
+// .col3, .col6, .col12, .col10 {
+//   @include specs;
+//   width: $global;
+// }
+
+// @media screen and (min-width: 700px) {
+//   .wrapper {
+//     width: 80%;
+//   }
+//   .col3 {
+//     @include grid(3)
+//   }
+//     .col6 {
+//     @include grid(6)
+//   }
+//     .col12 {
+//     @include grid(12)
+//   }
+//     .col10 {
+//     @include grid(10)
+//   }
+// section div:last-of-type {
+//   margin-right: 0;
+//   }
+// }
