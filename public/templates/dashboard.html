@@ -2,13 +2,18 @@
 
 <div class="wrapper">
  <section class="row header">
-   <div class="col3 login_btn">Logout</div><!--
- --><div class="col6 logo">APP TITLE</div>
+	<div class="col6 logo">APP TITLE</div>
  </section>
-<div class="col10 quiz_btn center">INSPIRE ME</div><!--
- --><div class="col10 add_title center">Who Inspires you?</div><!--
- --><div class="col4 add_btn center">ADD</div><!--
- --><div class="col10 library_title center">My Inspirations</div><!--
+<div class="col10 quiz_btn center">
+	<a href="#" ui-sref="category">INSPIRE ME</a>
+</div>
+<div class="col10 add_title center">Who Inspires you?</div><div class="col4 add_btn center">
+	<button ng-show="buttonHide" type="button">Add</button>
+	<div ng-show="userSubmit">
+		<!-- This is where Kate will apply the upload form -->
+	</div>
+</div>
+<div class="col10 library_title center">My Inspirations</div><!--
  --><section class="row user_inspir_library center">
      <div class="col4 inspiration center">image/quote/name</div><!--
    --><div class="col4 inspiration center">image/quote/name</div>
