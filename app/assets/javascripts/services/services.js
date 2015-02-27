@@ -9,4 +9,4 @@ angular.module('basic.services', [])
 	// 	...
 	// }
 	// return test;
-})
+// })
