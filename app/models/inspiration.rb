@@ -3,13 +3,13 @@ class Inspiration < ActiveRecord::Base
   belongs_to :category
   belongs_to :issue
 
-  validates_presence_of :picture, :quote, :keyword
+  validates_presence_of :picture, :quote, :name
 
-  has_attached_file :avatar,
+has_attached_file :picture,
   :styles => { :medium => "300x300>", :thumb => "100x100>" },
   :bucket => 'kbjsinstaclone',
   :url =>':s3_domain_url',
   :path => ':class/:attachment/:id_partition/:style/:filename',
   :default_url => "/images/:style/missing.png"
-  validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
+  validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\Z/
 end

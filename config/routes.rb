@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :users do
-    resources :inspirations
+  resources :users
+  resources :inspirations
+  resources :categories do
+    resources :issues
   end
 
 root 'welcome#index'
