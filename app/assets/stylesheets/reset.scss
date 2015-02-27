@@ -1,0 +1,26 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Mixins */
+
+@mixin grid ($col-num){
+  width: ($col * $col-num)+($gut * (($col-num) - 1));
+  margin-right: $gut;
+}
+
+@mixin specs {
+  box-sizing: border-box;
+  background: #777;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+/*  margin: 0 auto;*/
+}
+
+/*Variables*/
+
+$global: 100%;
+$col: 6.29%;
+$gut: 2.22%;

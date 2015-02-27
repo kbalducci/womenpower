@@ -1,17 +1,26 @@
 <!-- This is the grid structure for dashboard -->
 
 <div class="wrapper">
-  <section class="row"><div class="col3 login_btn">3</div><!--
-  --><div class="col6 logo">6</div></section><!--
-  --><div class="col10 quiz_btn">10</div><!--
-  --><div class="col10 add_btn">10</div><!--
-  --><div class="col4 ladies_library">4</div><!--
-  --><div class="col10 ladies">10</div><!--
-  --><section class="row">
-      <div class="col4">4</div><!--
-    --><div class="col4">4</div>
-    </section>
-  <div class="col5">5</div><!--
-  --><div class="col2">2</div>
-  </div>
-  
+ <section class="row header">
+ 	<div class="col6 logo center">APP TITLE</div>
+ </section>
+<div class="col10 quiz_btn center">
+	<a href="#" ui-sref="category">INSPIRE ME</a>
+</div>
+<div class="col10 add_title center">Who Inspires you?</div><div class="col4 add_btn center">
+	<button ng-show="buttonHide" type="button">Add</button>
+	<div ng-show="userSubmit">
+		<!-- This is where Kate will apply the upload form -->
+	</div>
+</div>
+<div class="col10 library_title center">My Inspirations</div><!--
+ --><section class="row user_inspir_library center">
+     <div class="col4 inspiration center">image/quote/name</div><!--
+   --><div class="col4 inspiration center">image/quote/name</div>
+   </section>
+ <section class="row footer">
+   <div class="col5 powered_by">Powered By: Kate, Erika & Dawn</div><!--
+ --><div class="col2 back_top_btn">Back To Top</div>
+ </section>
+ </div>
+ 
