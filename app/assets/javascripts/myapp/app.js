@@ -12,6 +12,12 @@ angular.module('app', ['app.controllers', 'ui.router'])
 		templateUrl: "templates/inspiration.html",
 		controller: "InspirationCtrl"
 	})
+	$stateProvider
+	.state('category', {
+		url: "/category",
+		templateUrl: "templates/category.html",
+		controller: "CategoryCtrl"
+	})
 
 	$urlRouterProvider.otherwise("/dashboard");
 });

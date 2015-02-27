@@ -5,6 +5,9 @@ angular.module('app.controllers', [])
 .controller('InspirationCtrl', function($scope, $state) {
 	// $scope.test = 'hello';
 })
+.controller('CategoryCtrl', function($scope, $state) {
+	// $scope.test = 'hello';
+})
 // .controller('SettingsCtrl', function($scope, $state) {
 // 	// $scope.test = 'hello';
 // 	// $scope.goHome = function() {
