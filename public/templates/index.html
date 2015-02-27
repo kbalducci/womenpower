@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Day 31</title>
+    <link rel="stylesheet" href="stylesheets/welcome.scss">
+  </head>
+  <body ng-app="app">
+
+    <nav id="navigation">
+
+        <div class="menu">
+          <a href="#" ui-sref="play">Play</a>
+          <a href="#" ui-sref="leaderboard">Leaderboard</a>
+          <a href="#" ui-sref="settings">Settings</a>
+          <a href="#" ui-sref="home">Home</a>
+        </div>
+
+    </nav>
+
+    <div ui-view></div>
+
+    <script src="javascripts/app.js"></script>
+    <script src="javascripts/controllers.js"></script>
+    <script src="javascripts/services.js"></script>
+</body>
+</html>
