@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :users do
+    resources :inspirations
+  end
   get 'welcome/index'
 
 root 'welcome#index'
