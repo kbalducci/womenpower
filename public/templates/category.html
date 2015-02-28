@@ -9,55 +9,13 @@
  </section>
  <section class="row container">
 
- 	<!-- <div ng-repeat="category in categories">
- 		{{ category.name }}
- 	</div> -->
-
    	<div ng-repeat="category in categories" class="col10 category_btn center">
 	   	<button  ng-click="studentBtn(category)" type="button">{{ category.name }}
 	   	</button>
-	   	<!-- <div ng-show="issueOptions" class="wrapper-student">
-		   	<div  class="title">What is it that you're dealing with?</div>
-
-		   	<button ng-click="issue1()" type="button">issue 1</button>
-		   		<ul ng-repeat="item in inspiration">
-                        <div class="photo-wrapper">
-                            <img ng-src="{{ item.image }}">
-                            <div class="name-wrapper">
-                            {{ item.name }}
-                            </div>
-                            <div class="quote-wrapper">
-                            {{ item.quote }}
-                            </div>
-                        </div>
-                </ul> -->
-		   		<!-- <div ng-bind="img"></div>
-		   		<div ng-bind="name"></div>
-		   		<div ng-bind="quote"></div> -->
-
-	    	<!-- <button type="button">issue 2</button>
-    	</div> -->
+	   		<div ng-repeat="issue in issues">
+	   			<button ng-cick="issueBtn(issue)">{{ issue.name }}</button>
+	   		</div>
    	</div>
-
-   	<!-- <div class="col10 category_btn center">
-	   	<button type="button" ui-sref="student">PROFESSIONAL
-	   	</button>
-	   	<div class="wrapper-student">
-		   	<div class="title">What is it that you're dealing with?</div>
-		   	<button type="button">issue 1</button>
-
-	    	<button type="button">issue 2</button>
-    	</div>
-   	</div>
-   	<div class="col10 category_btn center">
-	   	<button type="button" ui-sref="student">PERSONAL
-	   	</button>
-	   	<div class="wrapper-student">
-		   	<div class="title">What is it that you're dealing with?</div>
-		   	<button type="button">issue 1</button>
-	    	<button type="button">issue 2</button>
-    	</div>
-   	</div> -->
  </section>
  <section class="row footer">
    <div class="col5 powered_by">Powered By: Amazing Ladies</div><!--

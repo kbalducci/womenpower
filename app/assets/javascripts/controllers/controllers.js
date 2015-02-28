@@ -7,31 +7,27 @@ angular.module('app.controllers', [])
 })
 .controller('CategoryCtrl', function($scope, $state, $http) {
 	$http.get('http://localhost:3000/categories.json')
-		.success(function(categories) {
+		.success(function(response) {
 
-			var categories = [];
 
-	// $http.get(...)
-	// .success(function(categories) {
-		// var categories = [
-		// 	{
-		// 		id: 1,
-		// 		name: 'Student'
-		// 	},
-		// 	{
-		// 		id: 2,
-		// 		name: 'Professional'
-		// 	},
-		// 	{
-		// 		id: 3,
-		// 		name: 'Personal'
-		// 	}
-		// ];
+			$scope.categories = response;
+			console.log(response);
 
-		$scope.categories = categories;
+			$scope.studentBtn = function(issues) {
+				$http.get('http://localhost:3000/categories/1/issues.json')
+				.success(function(response) {
 
-		console.log($scope.categories);
+					$scope.issues = response;
+					console.log(response);
+				});
+			}
+
 	})
+
+		// console.log(categories);
+		// $scope.categories = categories;
+
+		// console.log($scope.categories);
 
 	// $scope.student1 = true;
 	// $scope.issueOptions = false;
