@@ -2,15 +2,12 @@
 
 <!-- category page grid-->
 
-<div class="wrapper">
-	<div class="col4 logo center">AWESOME APP NAME</div>
- <section class="row">
-   <div class="col12 page_title">What kind of amazing lady are you today?</div>
- </section>
+<div class="wrapper categories">
+	<div class="col4 logo center"><h2>AWESOME APP NAME</h2></div>
+   <div class="col10 page_title center"><h1>What kind of amazing lady are you today?<h1></div>
  <section class="row container">
-
-   	<div ng-repeat="category in categories" class="col10 category_btn center">
-	   	<button  ng-click="studentBtn(category)" type="button">{{ category.name }}
+   	<div ng-repeat="category in categories" class="ccol8 category_btn center">
+	   	<button  ng-click="studentBtn(category)" class="btn" type="button">{{ category.name }}
 	   	</button>
 	   		<div ng-repeat="issue in issues">
 	   			<button ng-cick="issueBtn(issue)">{{ issue.name }}</button>
@@ -18,8 +15,8 @@
    	</div>
  </section>
  <section class="row footer">
-   <div class="col5 powered_by">Powered By: Amazing Ladies</div><!--
- --><div class="col2 back_top_btn">Back To Top</div>
+   <div class="col5 powered_by center">Powered By: Amazing Ladies</div>
+ <!--<div class="col2 back_top_btn">Back To Top</div>-->
  </div>
  </section>
 </div>
