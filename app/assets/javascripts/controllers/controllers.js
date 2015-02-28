@@ -6,15 +6,20 @@ angular.module('app.controllers', [])
 	// $scope.test = 'hello';
 })
 .controller('CategoryCtrl', function($scope, $state, $http) {
-	$http.get('http://localhost:3000/categories.json')
+	$http.get('/categories.json')
 		.success(function(response) {
 
+			// for(i = 0; i<length.response; i++) {
+			// 	console.log(response[i]);
+
+			// 	if(response[0].name === response[1].name)
+			// }
 
 			$scope.categories = response;
 			console.log(response);
 
 			$scope.studentBtn = function(issues) {
-				$http.get('http://localhost:3000/categories/1/issues.json')
+				$http.get('/categories/1/issues.json')
 				.success(function(response) {
 
 					$scope.issues = response;
