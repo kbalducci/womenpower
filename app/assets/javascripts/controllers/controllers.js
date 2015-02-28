@@ -1,6 +1,8 @@
 angular.module('app.controllers', [])
 .controller('DashboardCtrl', function($scope, $state) {
-	// $scope.test = 'hello';
+
+	
+
 })
 .controller('InspirationCtrl', function($scope, $state) {
 	// $scope.test = 'hello';
