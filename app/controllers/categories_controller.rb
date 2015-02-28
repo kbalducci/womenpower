@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
 
   def index
-    render json: Category.all.uniq_by { |cat| cat.name }
+    render json: Category.all.ary.uniq { |cat| cat.name }
   end
 
   private
