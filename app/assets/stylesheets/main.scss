@@ -29,8 +29,17 @@ body {
   }
   
 }
+.btn {
+  background-color: rgb(9,83,104);
+}
+
+button {
+  background-color: rgb(9,83,104);
+  border: 3px solid white;
+  border-radius: 5px;
+}
 .wrapper {
-  // background: blue;
+  // background-color: rgb(9,83,104);
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
@@ -63,9 +72,32 @@ $gut: 2.22%;
   @include specs;
   width: $global;
   }
-  .quiz_btn a:hover {
+  .quiz_btn {
+  position:relative;
+  margin-top:10%;
+  background:#095368  ;
+  border: 4px solid white;
+  padding:20px;
+  font-size:0.9em;
+  color:white;
+  box-shadow:4px 4px 0px 0px #ad0149 ;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  border-radius: 8px;
 
-      color: white;
+  &:hover {
+  left:4px;
+  top:4px;
+  box-shadow:none;
+  transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  }
+  }
+  .bg_bottom {
+    background-color: #ccc;
   }
 }
 
