@@ -30,13 +30,14 @@ angular.module('app.controllers', [])
 		$http.get('/inspirations.json')
 		.success(function(response) {
 
-			$scope.inspirations = response
 			console.log(response);
+			$scope.inspirations = response;
 			
 		});
 	}
+})
 
-	console.log($scope.issueBtn);
+	// console.log($scope.issueBtn);
 
 		// console.log(categories);
 		// $scope.categories = categories;
@@ -81,7 +82,7 @@ angular.module('app.controllers', [])
 	// }
 // issue1();
 	
-})
+
 // .controller('SettingsCtrl', function($scope, $state) {
 // 	// $scope.test = 'hello';
 // 	// $scope.goHome = function() {
