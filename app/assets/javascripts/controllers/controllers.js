@@ -6,27 +6,32 @@ angular.module('app.controllers', [])
 	// $scope.test = 'hello';
 })
 .controller('CategoryCtrl', function($scope, $state, $http) {
+	$http.get('http://localhost:3000/categories.json')
+		.success(function(categories) {
+
+			var categories = [];
+
 	// $http.get(...)
 	// .success(function(categories) {
-		var categories = [
-			{
-				id: 1,
-				name: 'Student'
-			},
-			{
-				id: 2,
-				name: 'Professional'
-			},
-			{
-				id: 3,
-				name: 'Personal'
-			}
-		];
+		// var categories = [
+		// 	{
+		// 		id: 1,
+		// 		name: 'Student'
+		// 	},
+		// 	{
+		// 		id: 2,
+		// 		name: 'Professional'
+		// 	},
+		// 	{
+		// 		id: 3,
+		// 		name: 'Personal'
+		// 	}
+		// ];
 
 		$scope.categories = categories;
 
-		// console.log($scope.categories.id);
-	// })
+		console.log($scope.categories);
+	})
 
 	// $scope.student1 = true;
 	// $scope.issueOptions = false;
@@ -35,13 +40,13 @@ angular.module('app.controllers', [])
 	// 	return $scope.issueOptions = true;
 	// }
 
-	$scope.studentBtn = function(id) {
-		console.log(id);
+	// $scope.studentBtn = function(id) {
+	// 	// console.log(id);
 
-		// var promise = $http.get('http://tiny-pizza-server.herokuapp.com/collections/emoller-ang')
-		// .success(function(response) {
+	// 	var promise = $http.get('http://localhost:3000/categories')
+	// 	.success(function(response) {
 
-		// 	$scope.inspiration = [];
+	// 		$scope.inspiration = [];
 		// 	for(var i=0; i<response.length; i++) {
 
 		// 		console.log(i);
@@ -61,9 +66,9 @@ angular.module('app.controllers', [])
 
 		// .error(function(err) {
 		// 	console.log(err);
-		// })
+	// 	})
 
-	}
+	// }
 // issue1();
 	
 })
