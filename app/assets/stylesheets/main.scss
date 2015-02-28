@@ -1,17 +1,48 @@
+body { 
+  background-color: rgb(9,83,104);
 
+  h1, h2 {
+    font-family: "alternate-gothic-no-3-d", sans-serif;
+    color: rgb(210,229,68);
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  p {
+
+    font-family: "museo-slab", sans-serif;
+    color: rgb(221, 221, 219);
+    font-size: 1em;
+  }
+  a {
+    text-decoration: none;
+    font-family: "museo-slab", sans-serif;
+    &:hover {
+      color: white;
+    }
+    &:visited {
+      color: rgb(221, 221, 219);
+    }
+  }
+  
+}
 .wrapper {
-  background: blue;
+  // background: blue;
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
   overflow: hidden;
 }
-
+.dash_btn {
+  float: right;
+}
 @import 'grid';
 
 @mixin specs {
   box-sizing: border-box;
-  background: #777;
   display: inline-block;
   padding: 10px;
   margin-bottom: 5px;
@@ -32,9 +63,9 @@ $gut: 2.22%;
   @include specs;
   width: $global;
   }
+  .quiz_btn a:hover {
 
-  .quote_box {
-  background: white;
+      color: white;
   }
 }
 

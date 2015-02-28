@@ -53,8 +53,9 @@ gem 'devise'
 gem 'paperclip', '~> 4.2'
 gem 'aws-sdk', '< 2.0'
 gem 'simple_form'
+gem 'faker'
 group :test, :development do
-  gem 'faker'
+
   gem 'quiet_assets'
   gem 'rspec'
   gem 'rspec-rails'
