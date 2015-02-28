@@ -1,25 +1,55 @@
 <!-- This is the grid structure for dashboard -->
 
 <div class="wrapper dashboard">
+
  	<div class="col6 logo center"><h1>AWESOME APP NAME</h1></div>
+
 <div class="col8 quiz_btn center">
 	<a href="#" ui-sref="category"><h2>INSPIRE ME<h2></a>
 </div>
+
+<div class="col8 add_title center">
+  <h3>Who Inspires you?</h3>
+  </div>
+<div class="col4 add_btn center">
+	<button ng-click="addBtn()" type="button">
+    <h2>ADD</h2>
+    </button>
+	<div ng-show="userSubmit">
+
 <!-- <div class="col8 add_title center"><h3>Who Inspires you?</h3></div>
 <div class="col4 add_btn center">
 	<button ng-click="addBtn()" type="button"><h2>ADD</h2></button>
 	<div ng-show="userSubmit"> -->
+
 		<!-- This is where Kate will apply the upload form -->
 	<!-- </div>
 </div>
-<div class="col8 library_title center"><h2>My Inspirations</h2></div>
+<div class="col8 library_title center">
+  <h2>My Inspirations</h2>
+</div>
  	<section class="row user_inspir_library">
+<<<<<<< HEAD
+    <div ng-repeat="library in libraries" class="col4 inspiration">image/quote/name {{ library.picture }} {{ library.name }}
+     </div>
+     	<div class="quote_box">
+        <p>"awesome quote" {{ library.quote }}</p>
+      </div>
+    </div>
+  </section>
+<div class="col4 inspiration">image/quote/name
+ <div class="col8 library_title center">
+  <h2>My Inspirations</h2>
+  </div>
+</div>
+=======
      <div ng-repeat="library in libraries" class="col4 inspiration">image/quote/name {{ library.picture }} {{ library.name }}
      	<div class="quote_box"><p>"awesome quote" {{ library.quote }}</p></div>
      </div>
    <div class="col4 inspiration">image/quote/name
  <div class="col8 library_title center"><h2>My Inspirations</h2></div>
  </div> -->
+>>>>>>> d77fe7d9ed456353d27a9ceb802d57ecc5bbb7ee
 
 
  <!--This "user library" section is on hold-->
