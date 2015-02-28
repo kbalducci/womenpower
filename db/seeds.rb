@@ -18,7 +18,7 @@ inspiration = Inspiration.new(name: 'Sheryl Sandberg',
                                  user_id: user.id,
                                  category_id: student.id,
                                  issue_id: time_management.id)
-inspiration.picture = File.new(Rails.root.join('public', 'images', '/images/sandberg.jpg'))
+inspiration.picture = File.new(Rails.root.join('public', 'images', 'ssandberg.jpg'))
 # inspiration.picture = File.new(Rails.root.join('app', 'assets', 'images', 'sandberg.jpg'))
 inspiration.save!
 
