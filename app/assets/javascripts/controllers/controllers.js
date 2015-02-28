@@ -9,27 +9,33 @@ angular.module('app.controllers', [])
 })
 .controller('CategoryCtrl', function($scope, $state, $http) {
 	$http.get('/categories.json')
-		.success(function(response) {
+	.success(function(response) {
 
-			// for(i = 0; i<length.response; i++) {
-			// 	console.log(response[i]);
-
-			// 	if(response[0].name === response[1].name)
-			// }
-
-			$scope.categories = response;
-			console.log(response);
-
-			$scope.studentBtn = function(issues) {
-				$http.get('/categories/1/issues.json')
-				.success(function(response) {
-
-					$scope.issues = response;
-					console.log(response);
-				});
-			}
+		$scope.categories = response;
+		console.log(response);
 
 	})
+	$scope.studentBtn = function(issues) {
+		console.log('studentBtn');
+		$http.get('/categories/1/issues.json')
+		.success(function(response) {
+
+			$scope.issues = response;
+			console.log(response);
+		});
+	}
+
+	$scope.issueBtn = function(inspirations) {
+		console.log('issueButton');
+		$http.get('/inspirations.json')
+		.success(function(response) {
+
+			$scope.inspirations = response
+			console.log(response);
+		});
+	}
+
+	console.log($scope.issueBtn);
 
 		// console.log(categories);
 		// $scope.categories = categories;
