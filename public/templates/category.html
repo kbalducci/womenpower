@@ -14,10 +14,7 @@
 	   	</button>
 	   		<div ng-repeat="issue in issues">
 	   			<button ng-click="issueBtn(issue)" type="button">{{ issue.name }}</button>
-	   				<div ng-repeat="inspiration in inspirations">
-	   				{{ inspiration.picture }} 
-	   				{{ inspiration.name }} 
-	   				{{ inspiration.quote }}
+	   				<div ng-repeat="inspiration in inspirations">{{ inspiration.picture }} {{ inspiration.name }} {{ inspiration.quote }}
 	   				</div>
 	   		</div>
    	</div>

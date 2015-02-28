@@ -32,6 +32,7 @@ angular.module('app.controllers', [])
 
 			$scope.inspirations = response
 			console.log(response);
+			
 		});
 	}
 
