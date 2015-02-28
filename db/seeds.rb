@@ -10,14 +10,14 @@ user = User.create(first_name: Faker::Name.first_name,
                   email: Faker::Internet.email,
                   password: Faker::Internet.password(8))
 
-category = Category.create(name: 'student')
-issue = Issue.create(name: 'time-management',
-                     category_id: category.id)
+student = Category.create(name: 'student')
+time_management = Issue.create(name: 'time-management',
+                     category_id: student.id)
 inspiration = Inspiration.new(name: 'Sheryl Sandberg',
                                  quote: 'Hello, awesome lady!!!',
                                  user_id: user.id,
-                                 category_id: category.id,
-                                 issue_id: issue.id)
+                                 category_id: student.id,
+                                 issue_id: time_management.id)
 inspiration.picture = File.new(Rails.root.join('app', 'assets', 'images', 'sandberg.jpg'))
 inspiration.save!
 
