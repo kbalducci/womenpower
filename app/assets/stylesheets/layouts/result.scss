@@ -2,101 +2,101 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import 'grid';
+// @import 'grid';
 
-@mixin specs {
-  box-sizing: border-box;
-  background: #777;
-  display: inline-block;
-  padding: 10px;
-  margin-bottom: 5px;
-  text-align: center;
-}
+// @mixin specs {
+//   box-sizing: border-box;
+//   background: #777;
+//   display: inline-block;
+//   padding: 10px;
+//   margin-bottom: 5px;
+//   text-align: center;
+// }
 
-/*Variables*/
+// /*Variables*/
 
-$global: 100%;
-$col: 6.29%;
-$gut: 2.22%;
+// $global: 100%;
+// $col: 6.29%;
+// $gut: 2.22%;
 
-/* === global ===*/
-.wrapper {
-  background: pink;
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
-  overflow: hidden;
-}
+// /* === global ===*/
+// .wrapper {
+//   background: pink;
+//   width: 90%;
+//   max-width: 900px;
+//   margin: 0 auto;
+//   overflow: hidden;
+// }
 
 
-.results {
+// .results {
 
-.col4, .col5, .col5, .col10 {
-  @include specs;
-  width: $global;
-}
+// .col4, .col5, .col5, .col10 {
+//   @include specs;
+//   width: $global;
+// }
 
-.quote_box {
-  background: white;
-}
-.btn {
-	background: blue;
-	border-right: 5px;
-	box-shadow: none;
-}
-}
+// .quote_box {
+//   background: white;
+// }
+// .btn {
+// 	background: blue;
+// 	border-right: 5px;
+// 	box-shadow: none;
+// }
+// }
 
-/* === medium ===*/
+// /* === medium ===*/
 
-@media screen and (min-width: 550px) {
+// @media screen and (min-width: 550px) {
 
-.results {
+// .results {
 
-	.logo, .category_btn {
-  	width: 70%;
-  	display: block;	
-  	margin: 0 auto;
-  	margin-bottom: 10px;
-	}
-	.page_title {
-	width: 80%;
-	display: block;
-	}
-	.center {
-  	margin: 0 auto;
-  	display: block;
-  	margin-bottom: 5px;
-  }
-  .powered_by {
-  	width: 40%;
-  	display: block;
-  }
-}
-}
+// 	.logo, .category_btn {
+//   	width: 70%;
+//   	display: block;	
+//   	margin: 0 auto;
+//   	margin-bottom: 10px;
+// 	}
+// 	.page_title {
+// 	width: 80%;
+// 	display: block;
+// 	}
+// 	.center {
+//   	margin: 0 auto;
+//   	display: block;
+//   	margin-bottom: 5px;
+//   }
+//   .powered_by {
+//   	width: 40%;
+//   	display: block;
+//   }
+// }
+// }
 
-/* === large ===*/
+// /* === large ===*/
 
-@media screen and (min-width: 900px) {
+// @media screen and (min-width: 900px) {
 
-.results {
+// .results {
 
-	.col4 {
-		@include grid(4); 
-	}
-	.col5 {
-		@include grid(5); 
-	}
-	.col6 {
-		@include grid(6); 
-	}
-	.col10 {
-		@include grid(10); 
-	}
-	/*Why do I need this in both media queries*/
-	.center {
-  	margin: 0 auto;
-  	display: block;
-  	margin-bottom: 5px;
-  }
-}
-}
+// 	.col4 {
+// 		@include grid(4); 
+// 	}
+// 	.col5 {
+// 		@include grid(5); 
+// 	}
+// 	.col6 {
+// 		@include grid(6); 
+// 	}
+// 	.col10 {
+// 		@include grid(10); 
+// 	}
+// 	/*Why do I need this in both media queries*/
+// 	.center {
+//   	margin: 0 auto;
+//   	display: block;
+//   	margin-bottom: 5px;
+//   }
+// }
+// }
