@@ -6,22 +6,20 @@
 	<div class="col4 logo center"><h2>AWESOME APP NAME</h2></div>
    <div class="col10 page_title center"><h1>What kind of amazing lady are you today?<h1></div>
  <section class="row container">
-<!--    	<div class="col8 category_btn center">
-	   	<button class="btn" type="button" ui-sref="student"><p>STUDENT
-	   	</p></button>
-   	</div>
-   	<div class="col8 category_btn center">
-	   	<button class="btn" type="button"><p>PROFESSIONAL
-	   	</p></button>
-   	</div>
-   	<div class="col8 category_btn center">
-	   	<button class="btn" type="button"><p>PERSONAL
-	   	</p></button>
-   	</div>
- -->
    	<div ng-repeat="category in categories" class="col8 category_btn center">
 	   	<button  class="btn" ng-click="studentBtn(category.id)" type="button">{{ category.name }}
+
+ <!-- DO NOT deleted 'ng-repeat' and 'ng-click' -->
+
+   	<div ng-repeat="category in categories" class="col8 category_btn center">
+	   	<button  ng-click="studentBtn(category)" class="btn" type="button">{{ category.name }}
+
+   	<div ng-repeat="category in categories" class="col10 category_btn center">
+	   	<button  ng-click="studentBtn(category.id)" type="button">{{ category.name }}
 	   	</button>
+	   		<div ng-repeat="issue in issues">
+	   			<button ng-cick="issueBtn(issue)">{{ issue.name }}</button>
+	   		</div>
    	</div>
  </section>
  <section class="row footer">
