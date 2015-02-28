@@ -1,0 +1,102 @@
+// Place all the styles related to the categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'grid';
+
+@mixin specs {
+  box-sizing: border-box;
+  background: #777;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/*Variables*/
+
+$global: 100%;
+$col: 6.29%;
+$gut: 2.22%;
+
+/* === global ===*/
+.wrapper {
+  background: pink;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.categories {
+
+.col4, .col8, .col10, .col5 {
+  @include specs;
+  width: $global;
+}
+
+.quote_box {
+  background: white;
+}
+.btn {
+	background: white;
+	border-right: 5px;
+	box-shadow: none;
+}
+}
+
+/* === medium ===*/
+
+@media screen and (min-width: 550px) {
+
+.categories {
+
+	.logo, .category_btn {
+  	width: 70%;
+  	display: block;	
+  	margin: 0 auto;
+  	margin-bottom: 10px;
+	}
+	.page_title {
+	width: 80%;
+	display: block;
+	}
+		.center {
+  	margin: 0 auto;
+  	display: block;
+  	margin-bottom: 5px;
+  }
+  .powered_by {
+  	width: 40%;
+  	display: block;
+  }
+}
+}
+
+/* === large ===*/
+
+@media screen and (min-width: 900px) {
+
+.categories {
+
+	.col4 {
+		@include grid(4); 
+	}
+	.col5 {
+		@include grid(5); 
+	}
+	.col8 {
+		@include grid(8); 
+	}
+	.col10 {
+		@include grid(10); 
+	}
+	/*Why do I need this in both media queries*/
+	.center {
+  	margin: 0 auto;
+  	display: block;
+  	margin-bottom: 5px;
+  }
+}
+}
