@@ -86,7 +86,15 @@ img {
 }
 
 /*============ forms/signin pages =============*/
+    .sessions {
 
+        .logo {
+            margin-top: 2em;
+        }
+            .header_line {
+            width: 50%;
+  }
+    
 button {
     background-color: $bgcolor-teal;
     border: 3px solid white;
@@ -137,6 +145,7 @@ button {
             font-weight: 900;
         }
     }
+}
 }
 
 /*============= pages ==============*/
@@ -249,7 +258,7 @@ button {
     }
     .categories {
         .category_btn {
-            width: 70%;
+            width: 60%;
             display: block;
             margin: 0 auto;
             margin-bottom: 10px;
