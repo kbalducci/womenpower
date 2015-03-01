@@ -20,7 +20,7 @@ learning_curve = Issue.create(name: 'learning-curve',
                               category_id: student.id)
 discrimination = Issue.create(name: 'discrimination',
                               category_id: professional.id)
-impostor = Issue.create(name: 'impostor syndrom',
+impostor = Issue.create(name: 'impostor syndrome',
                         category_id: professional.id)
 balance = Issue.create(name: 'work-life balance',
                       category_id: personal.id)
