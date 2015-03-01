@@ -17,13 +17,19 @@ angular.module('app.controllers', [])
 	// 	$scope.issueShow = true;
 
 	// })
+	console.log('test');
 
-	$http.get('/categories/2.json')
+	$http.get('/kjhkjh/2.json')
 	.success(function(response) {
 
-		// if(response)
+		console.log(response);
+		console.log(response.message);
 
-		$scope.categories = response;
+		if(response.message) {
+			$scope.displayError = response.message;
+		}
+
+		// $scope.categories = response;
 		// console.log(response);
 
 		// $scope.categoryTitle = true;
