@@ -28,7 +28,7 @@ judgment = Issue.create(name: 'judgment',
                         category_id: personal.id)
 
 time_insp = Inspiration.new(name: 'Maya Angelou',
-                                 quote: '“All great achievements require time”',
+                                 quote: '“All great achievements require time.”',
                                  user_id: user.id,
                                  category_id: student.id,
                                  issue_id: time_management.id)
@@ -36,7 +36,7 @@ time_insp.picture = File.new(Rails.root.join('app', 'assets', 'images', 'angelou
 time_insp.save!
 
 learning_insp = Inspiration.new(name: 'Alison Pincus',
-                                quote: 'Surround yourself with a trusted and loyal team. It makes all the difference.',
+                                quote: '“Surround yourself with a trusted and loyal team. It makes all the difference.”',
                                 user_id: user.id,
                                 category_id: student.id,
                                 issue_id: learning_curve.id )
@@ -44,7 +44,7 @@ learning_insp.picture = File.new(Rails.root.join('app', 'assets', 'images', 'pin
 learning_insp.save!
 
 discrimination_insp = Inspiration.new(name: 'Madeline Albright',
-                                      quote: "No country can build a healthy and growing economy or establish a true democracy if half its people are held back, pushed aside, left behind, or beaten up.",
+                                      quote: "“No country can build a healthy and growing economy or establish a true democracy if half its people are held back, pushed aside, left behind, or beaten up.”",
                                       user_id: user.id,
                                       category_id: professional.id,
                                       issue_id: discrimination.id)
@@ -52,7 +52,7 @@ discrimination_insp.picture = File.new(Rails.root.join('app', 'assets', 'images'
 discrimination_insp.save!
 
 impostor_insp = Inspiration.new(name: 'Julie Pagano',
-                                quote: 'The biggest piece of advice I can give you is “build a party.” Create a support system of people you care about, that you trust, that you respect. That care about you. These people are your support system. When you have a bad day with impostor syndrome, these are the people you’re going to talk to.',
+                                quote: '“The biggest piece of advice I can give you is “build a party.” Create a support system of people you care about, that you trust, that you respect. That care about you. These people are your support system. When you have a bad day with impostor syndrome, these are the people you’re going to talk to.”',
                                 user_id: user.id,
                                 category_id: professional.id,
                                 issue_id: impostor.id)
@@ -60,7 +60,7 @@ impostor_insp.picture = File.new(Rails.root.join('app', 'assets', 'images', 'pag
 impostor_insp.save!
 
 balance_insp = Inspiration.new(name: 'Sheryl Sandberg',
-                              quote: "You know, there has never been a 24-hour period in five years when I have not responded to e-mail at Facebook. I am not saying it’s easy. I work long hours.I am saying that I was able to mold those hours around the needs of my family, and that matters. And I really encourage other people at Facebook to mold hours around themselves.",
+                              quote: "“You know, there has never been a 24-hour period in five years when I have not responded to e-mail at Facebook. I am not saying it’s easy. I work long hours.I am saying that I was able to mold those hours around the needs of my family, and that matters. And I really encourage other people at Facebook to mold hours around themselves.”",
                               user_id: user.id,
                               category_id: personal.id,
                               issue_id: balance.id)
@@ -68,7 +68,7 @@ balance_insp.picture = File.new(Rails.root.join('app', 'assets', 'images', 'sand
 balance_insp.save!
 
 judgment_insp = Inspiration.new(name: 'Tina Fey',
-                              quote: "When faced with sexism or ageism or lookism or even really aggressive Buddhism, ask yourself the following question: Is this person in between me and what I want to do? If the answer is no, ignore it and move on. Your energy is better used doing your work and outpacing people that way. Then, when you're in charge, don't hire the people who were jerky to you",
+                              quote: "“When faced with sexism or ageism or lookism or even really aggressive Buddhism, ask yourself the following question: Is this person in between me and what I want to do? If the answer is no, ignore it and move on. Your energy is better used doing your work and outpacing people that way. Then, when you're in charge, don't hire the people who were jerky to you.”",
                               user_id: user.id,
                               category_id: personal.id,
                               issue_id: judgment.id)

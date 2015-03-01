@@ -20,12 +20,19 @@
 	</div>
 	<div class="results_container">
 		<div ng-repeat="inspiration in inspirations">
-			<div class="col8 center"><h2>Be Inspired.</h2></div>
-			<div class="result_name"><h3>by  {{ inspiration.name }}</h3></div>
+			<div class="col8 center">
+				<h2>Be Inspired.</h2>
+			</div>
+			<div class="result_name">
+				<h3>by  {{ inspiration.name }}</h3>
+			</div>
 			<div class="photo_quote_container">
-				<div class="result_photo"><img ng-src="{{ inspiration.image }}">
+				<div class="result_photo">
+					<img ng-src="{{ inspiration.image }}">
 				</div>
-				<div class="col8 result_quote"><p id="quote_align">{{ inspiration.quote }}</p></div>
+				<div class="col8 result_quote">
+					<p id="quote_align">{{ inspiration.quote }}</p>
+				</div>
 			</div>
 		</div>
 	</div>
