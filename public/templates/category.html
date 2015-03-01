@@ -10,7 +10,7 @@
  <!-- DO NOT deleted 'ng-repeat' and 'ng-click' -->
 
    	<div ng-repeat="category in categories">
-	   	<button ng-click="studentBtn(category)" class="col8 category_btn center"><h3>{{ category.name }}</h3>
+	   	<button ng-click="categoryBtn()" ng-model="categoryId" ng-show="categoryShow" class="col8 category_btn center"><h3>{{ category.name }}</h3>
 	   	</button>
 	   		<div ng-repeat="issue in issues">
 	   		<div class="col10 page_title"><h2>What is it that you're dealing with?</h2></div>
