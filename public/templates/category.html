@@ -2,10 +2,11 @@
 
 <!-- category page grid-->
 
-<div class="wrapper categories">
+<div class="categories wrapper">
 	<div class="col4 logo center"><h2>AWESOME APP NAME</h2></div>
-   <div ng-show="categoryTitle" class="col10 page_title center"><h1>What kind of amazing lady are you today?<h1></div>
- <section class="row category_container"> <!--This is the container that holds all of the buttons-->
+	<div class="header_line"></div>
+   	<div ng-show="categoryTitle" class="col10 page_title center"><h1>What kind of amazing lady are you today?<h1></div>
+ 	<section class="category_container"> <!--This is the container that holds all of the buttons-->
 
  <!-- DO NOT deleted 'ng-repeat' and 'ng-click' -->
 
@@ -15,26 +16,34 @@
 	</div>
 
 	<div ng-repeat="issue in issues">
-	<div ng-show="issueTitle" class="col10 page_title center"><h1>What kind of issue are you having?<h1></div>
-		<button ng-click="issueBtn(issue.id)" ng-show="issueShow" class="col8 category_btn center"><p>{{ issue.name }}</p></button>
+		<div ng-show="issueTitle" class="col10 page_title">
+			<h2>What kind of issue are you having?<h2>
+		</div>
+		<button ng-click="issueBtn(issue.id)" ng-show="issueShow" class="col8 category_btn center">
+			<h3>{{ issue.name }}</h3>
+		</button>
 	</div>
 
 	<div class="row results_container">
 		<div ng-repeat="inspiration in inspirations">
-			<div class="col8 result_name">
+			<div class="col10 center">
+				<h2>Be Inspired.</h2>
+			</div>
+			<div class="result_name">
 				<h3>{{ inspiration.name }}</h3>
 			</div>
 			<div class="photo_quote_container">
 			<div class="col6 result_photo">
 				<img ng-src="{{ inspiration.image }}">
 			</div>
-			<div class="col10 result_quote"><p>{{ inspiration.quote }}</p></div>
+			<div class="col10 result_quote">
+				<p id="quote_align">{{ inspiration.quote }}</p>
+			</div>
 			</div>
 		</div>
 	</div>
-   	
  </section>
- <section class="row footer">
+ <section class="footer">
    <div class="col5 powered_by center"><p>Powered By: Amazing Ladies</p></div>
  <!--<div class="col2 back_top_btn">Back To Top</div>-->
  </div>

@@ -62,6 +62,7 @@ group :test, :development do
   gem 'simplecov'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'shoulda-matchers', require: false
 end
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular'
