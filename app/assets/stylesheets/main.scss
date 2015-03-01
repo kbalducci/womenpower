@@ -13,27 +13,37 @@
 $global: 100%;
 $col: 6.29%;
 $gut: 2.22%;
+$bgcolor-teal: rgb(9,83,104);
+$headercolor-yellow: rgb(210,229,68);
+$pcolor-grey: rgb(221, 221, 219);
 
 /*========================global=========================*/
 
 body { 
-  background-color: rgb(9,83,104);
+  background-color: $bgcolor-teal;
 
   h1, h2 {
     font-family: "alternate-gothic-no-3-d", sans-serif;
-    color: rgb(210,229,68);
+    color: $headercolor-yellow;
   }
+
   h1 {
     font-size: 3.5em;
   }
   h2 {
     font-size: 3em;
   }
+
+  h3 {
+    font-family: "museo-slab", sans-serif;
+    font-size: 2em;
+    color: $pcolor-grey;
+  }
   p {
 
     font-family: "museo-slab", sans-serif;
-    color: rgb(221, 221, 219);
-    font-size: 1em;
+    color: $pcolor-grey;
+    font-size: 1.25em;
   }
   a {
     text-decoration: none;
@@ -42,21 +52,38 @@ body {
       color: white;
     }
     &:visited {
-      color: rgb(221, 221, 219);
+      color: $pcolor-grey;
     }
   }
 }
-.btn {
-  display: block;
-  background-color: rgb(9,83,104);
+img {
+  max-width: 100%;
+}
+.wrapper {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
+.dash_btn {
+  float: right;
+}
+
+/*============ forms/signin pages =============*/
+
 button {
-  background-color: rgb(9,83,104);
+  background-color: $bgcolor-teal;
   border: 3px solid white;
   border-radius: 5px;
+  margin-top: 3em;
 }
-.forms {
+.form_headers{
+  margin-top: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.forms_wrap {
   margin: 0 auto;
   text-align: center;
  input {
@@ -69,27 +96,33 @@ button {
   box-sizing: border-box;
   border: 0.5em solid white;
  }
-   label {
+   label, span {
     color: white;
     font-family: "museo-slab", sans-serif;
     margin-bottom: 0.5em;
     display: block;
+
+    &:visited {
+      color: $pcolor-grey;
+    }
   }
   .boolean {
-    margin-bottom: 0;
+    margin:0 auto;
+  }
+  .form-actions {
+    .button {
+      background: white;
+      // border: 0px 0px 3px 3px solid #ad0149;
+      box-shadow:4px 4px 0px 0px #ad0149;
+      width: 9em;
+      margin-top: 2em;
+      color: $bgcolor-teal;
+      font-family: "museo-slab", sans-serif;
+      font-weight: 900;
+    }
   }
 }
 
-.wrapper {
-  // background-color: rgb(9,83,104);
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.dash_btn {
-  float: right;
-}
 
 /*============= pages ==============*/
 .dashboard {
@@ -98,9 +131,9 @@ button {
   @include specs;
   width: $global;
   }
-  .quiz_btn {
+  .quiz_btn  {
   position:relative;
-  margin-top:10%;
+  // margin-top:6em;
   background:#095368  ;
   border: 4px solid white;
   padding:20px;
@@ -122,8 +155,9 @@ button {
   -webkit-transition: all .4s ease-in-out;
   }
   }
-  .bg_bottom {
-    background-color: #ccc;
+  .logo {
+    margin-bottom: 6em;
+    margin-top: 5em;
   }
 }
 
@@ -139,23 +173,43 @@ button {
 	border-right: 5px;
 	box-shadow: none;
 }
+.category_btn {
+    position:relative;
+  margin-top:10%;
+  background:#095368  ;
+  border: 4px solid white;
+  padding:20px;
+  font-size:0.9em;
+  color:white;
+  box-shadow:4px 4px 0px 0px #ad0149 ;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  border-radius: 8px;
+
+  &:hover {
+  left:4px;
+  top:4px;
+  box-shadow:none;
+  transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  }
 }
-/* There is no longer and issues html page... Keep these in case 
-you need to reference classes*/
-
-// .issues {
-
-// .col4, .col8, .col10, .col5 {
-//   @include specs;
-//   width: $global;
-// }
-
-// .btn {
-// 	background: white;
-// 	border-right: 5px;
-// 	box-shadow: none;
-// }
-// }
+.category_container h2 {
+  margin-right: 0;
+}
+.results_container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+      .result_photo img {
+      border: 4px solid white;
+      border-radius: 8px;
+    }
+} 
+}
 
 /* ========================= medium ============================*/
 
@@ -174,16 +228,11 @@ you need to reference classes*/
       margin-right: 0;
     }
   }
-  .logo, .add_btn {
-  width: 50%;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  }
+
   }
 .categories {
 
-	.logo, .category_btn {
+   .category_btn {
   	width: 70%;
   	display: block;	
   	margin: 0 auto;
@@ -191,7 +240,7 @@ you need to reference classes*/
 	}
 	.page_title {
 	width: 80%;
-	display: block;
+  display: inline;
 	}
 		.center {
   	margin: 0 auto;
@@ -204,31 +253,6 @@ you need to reference classes*/
   }
 }
 
-/* There is no longer and issues html page... Keep these in case 
-you need to reference classes*/
-
-// .issues {
-
-// 	.logo, .category_btn {
-//   	width: 70%;
-//   	display: block;	
-//   	margin: 0 auto;
-//   	margin-bottom: 10px;
-// 	}
-// 	.page_title {
-// 	width: 80%;
-// 	display: block;
-// 	}
-// 		.center {
-//   	margin: 0 auto;
-//   	display: block;
-//   	margin-bottom: 5px;
-//   }
-//   .powered_by {
-//   	width: 40%;
-//   	display: block;
-//   }
-// }
 }
 
 
@@ -263,6 +287,9 @@ you need to reference classes*/
   display: block;
   margin-bottom: 5px;
   }
+    .logo {
+    margin-bottom: 6em;
+  }
 }
 .categories {
 
@@ -276,7 +303,8 @@ you need to reference classes*/
 		@include grid(8); 
 	}
 	.col10 {
-		@include grid(10); 
+		@include grid(10);
+    margin-right: 0; 
 	}
 	/*Why do I need this in both media queries*/
 	.center {
@@ -284,32 +312,20 @@ you need to reference classes*/
   	display: block;
   	margin-bottom: 5px;
   }
+  .photo_quote_container {
+    overflow: hidden;
+
+    .result_photo img {
+      width: 60%;
+      float: left;
+    }
+    .result_quote {
+      float: left;
+    }
+  }
 }
-
-/* There is no longer and issues html page... Keep these in case 
-you need to reference classes*/
-
-
-// .issues {
-
-// 	.col4 {
-// 		@include grid(4); 
-// 	}
-// 	.col5 {
-// 		@include grid(5); 
-// 	}
-// 	.col8 {
-// 		@include grid(8); 
-// 	}
-// 	.col10 {
-// 		@include grid(10); 
-// 	}
-// 	/*Why do I need this in both media queries*/
-// 	.center {
-//   	margin: 0 auto;
-//   	display: block;
-//   	margin-bottom: 5px;
-//   }
-// }
+.footer {
+  clear: both;
+}
 
 }

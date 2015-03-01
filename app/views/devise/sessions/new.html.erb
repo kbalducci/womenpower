@@ -1,8 +1,8 @@
 <div class="wrapper center">
-<h2 class="btn">Log in</h2>
+<h1 class="form_headers">Log in</h1>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="forms">
+  <div class="forms_wrap">
   <div class="form-inputs">
     <p><%= f.input :email, required: false, autofocus: true %></p>
     <p><%= f.input :password, required: false %></p>
