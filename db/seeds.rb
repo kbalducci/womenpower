@@ -12,7 +12,7 @@ user = User.create(first_name: Faker::Name.first_name,
 
 student = Category.create(name: 'student')
 time_management = Issue.create(name: 'time-management',
-                     category_id: student.id)
+                              category_id: student.id)
 inspiration = Inspiration.new(name: 'Sheryl Sandberg',
                                  quote: 'Hello, awesome lady!!!',
                                  user_id: user.id,
@@ -22,4 +22,27 @@ inspiration = Inspiration.new(name: 'Sheryl Sandberg',
 inspiration.picture = File.new(Rails.root.join('app', 'assets', 'images', 'sandberg.jpg'))
 # inspiration.picture = File.new(Rails.root.join('public', 'images', 'ssandberg.jpg'))
 inspiration.save!
+
+professional = Category.create(name: 'professional')
+discrimination = Issue.create(name: 'discrimination',
+                              category_id: professional.id)
+discrimination_insp = Inspiration.new(name: 'Madeline Albright',
+                                      quote: "No country can build a healthy and growing economy or establish a true democracy if half its people are held back, pushed aside, left behind, or beaten up.",
+                                      user_id: user.id,
+                                      category_id: professional.id,
+                                      issue_id: discrimination.id)
+discrimination_insp.picture = File.new(Rails.root.join('app', 'assets', 'images', 'albright.jpg'))
+discrimination_insp.save!
+
+personal = Category.create(name: 'personal')
+balance = Issue.create(name: 'work-life balance',
+                              category_id: personal.id)
+balance_insp = Inspiration.new(name: 'Leslie Knope',
+                              quote: "We need to remember what’s important in life: friends, waffles, work. Or waffles, friends, work. Doesn’t matter, but work is third.",
+                              user_id: user.id,
+                              category_id: personal.id,
+                              issue_id: balance.id)
+balance_insp.picture = File.new(Rails.root.join('app', 'assets', 'images', 'knope.jpg'))
+balance_insp.save!
+
 
