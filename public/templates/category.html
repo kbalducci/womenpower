@@ -10,9 +10,10 @@
  <!-- DO NOT deleted 'ng-repeat' and 'ng-click' -->
 
    	<div ng-repeat="category in categories">
-	   	<button ng-click="studentBtn(category)" class="col8 category_btn center"><h3>{{ category.name }}</h3>
+	   	<button ng-click="categoryBtn()" ng-model="categoryId" ng-show="categoryShow" class="col8 category_btn center"><h3>{{ category.name }}</h3>
 	   	</button>
 	   		<div ng-repeat="issue in issues">
+	   		<div class="col10 page_title center"><h1>What kind of issue are you having?<h1></div>
 	   			<button ng-click="issueBtn(issue)" class="col8 category_btn center"><p>{{ issue.name }}</p></button>
 	   			<div class="row results_container">
 	   				<div ng-repeat="inspiration in inspirations">

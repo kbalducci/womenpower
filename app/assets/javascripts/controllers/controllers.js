@@ -14,13 +14,52 @@ angular.module('app.controllers', [])
 		$scope.categories = response;
 		console.log(response);
 
+		// $scope.categories = [
+		// 	{
+		// 	name: 'student',
+		// 	issues: {
+		// 			name: 'time-management',
+		// 			name: 'learning curve'
+		// 		}
+		// 	},
+
+		// 	{
+		// 	name: 'professional', 
+		// 	issues: {
+		// 			name: 'sexual-harrassment',
+		// 			name: 'discrimination'
+		// 		}
+		// 	},
+		// 	{
+		// 	name: 'personal' 
+		// 		// $scope.issues = {
+		// 		// 	name: 'work-life balance',
+		// 		// 	name: 'doing-it-all woman'
+		// 		// }
+		// 	}
+		// ]
+
+		console.log($scope.categories);
+
+
+		$scope.activeCategoryId = 1;
+		$scope.categoryId = 0;
+		$scope.categoryShow = true;
+
 	})
-	$scope.studentBtn = function(issues) {
-		console.log('studentBtn');
+	
+	$scope.categoryBtn = function() {
+		console.log('categoryBtn');
 		$http.get('/categories/1/issues.json')
 		.success(function(response) {
 
+
 			$scope.issues = response;
+
+			// if($scope.issues.name === 'time-management') {
+
+			// }
+
 			console.log(response);
 		});
 	}
