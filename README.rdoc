@@ -1,20 +1,20 @@
 == README
-= February 26th Hackathon
+===February 26th Hackathon
 
-## Description
+=== Description
 *Get Inspired* is an app designed to inspire women facing various issues in multiple aspects of their lives (personal, student, professional).
 Users create an account and then have access to our database of inspirational women and their applicable quotations.
 
-### Technical Details
+ ===Technical Details
 *Ruby Version 2.2.0
 
-### App Features
+=== App Features
 
 * User login with Devise
 * Images stored using AWS Paperclip
 
 
-### Deliverables
+=== Deliverables
 
 * Trello: https://trello.com/b/S13m1waO/weekend-hackathon
 * Heroku: https://women-power.herokuapp.com
