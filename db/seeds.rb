@@ -28,7 +28,7 @@ judgment = Issue.create(name: 'judgment',
                         category_id: personal.id)
 
 time_insp = Inspiration.new(name: 'Maya Angelou',
-                                 quote: 'All great achievements require time',
+                                 quote: '“All great achievements require time”',
                                  user_id: user.id,
                                  category_id: student.id,
                                  issue_id: time_management.id)
