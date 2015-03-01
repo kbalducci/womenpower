@@ -67,11 +67,22 @@ img {
 
 .wrapper {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
 }
 
+.menu_wrapper {
+    overflow: hidden;
+    padding: 2em 0;
+
+    .menu_btn {
+        float: left;
+    }
+    .menu {
+        float: right;
+    }
+}
 
 .dash_btn {
     float: right;
@@ -85,9 +96,7 @@ img {
   margin-bottom: 2em;
   margin-top: 1em;
 }
-.menu_btn {
-    margin-top:2em;
-}
+
 /*============ forms/signin pages =============*/
     .sessions {
 
@@ -99,10 +108,12 @@ img {
   }
     
 button {
+    -webkit-appearance: none;
     background-color: $bgcolor-teal;
     border: 3px solid white;
     border-radius: 5px;
     margin-top: 3em;
+
 }
 
 .form_headers {
@@ -172,7 +183,7 @@ button {
         text-transform: uppercase;
         border-radius: 8px;
         &:hover {
-            left: 4px;
+            left: 0px;
             top: 4px;
             box-shadow: none;
             transition: all .4s ease-in-out;
@@ -214,7 +225,7 @@ button {
         text-transform: uppercase;
         border-radius: 8px;
         &:hover {
-            left: 4px;
+            // left: 4px;
             top: 4px;
             box-shadow: none;
             transition: all .4s ease-in-out;

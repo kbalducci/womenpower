@@ -6,12 +6,6 @@ angular.module('app', ['app.controllers', 'ui.router'])
 		templateUrl: "templates/dashboard.html",
 		controller: "DashboardCtrl"
 	})
-	// $stateProvider
-	// .state('inspiration', {
-	// 	url: "/inspiration",
-	// 	templateUrl: "templates/inspiration.html",
-	// 	controller: "InspirationCtrl"
-	// })
 	$stateProvider
 	.state('category', {
 		url: "/category",
