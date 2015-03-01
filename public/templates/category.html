@@ -2,28 +2,28 @@
 
 <!-- category page grid-->
 
-<div class="categories wrapper">
+<div class="categories">
 	<div class="col4 logo center"><h2>AWESOME APP NAME</h2></div>
 	<div class="header_line"></div>
-   <div class="col10 page_title center"><h1>What kind of amazing lady are you today?<h1></div>
+   <div class="col8 page_title center"><h1>What kind of amazing lady are you today?</h1></div>
  <section class="category_container"> <!--This is the container that holds all of the buttons-->
 
  <!-- DO NOT deleted 'ng-repeat' and 'ng-click' -->
 
    	<div ng-repeat="category in categories">
-	   	<button ng-click="categoryBtn()" ng-model="categoryId" ng-show="categoryShow" class="col8 category_btn center"><h3>{{ category.name }}</h3>
+	   	<button ng-click="categoryBtn()" ng-model="categoryId" ng-show="categoryShow" class="col6 category_btn center"><h3>{{ category.name }}</h3>
 	   	</button>
 	   		<div ng-repeat="issue in issues">
-	   		<div class="col10 page_title"><h2>What is it that you're dealing with?</h2></div>
-	   			<button ng-click="issueBtn(issue)" class="col8 category_btn center"><h3>{{ issue.name }}</h3></button>
+	   		<div class="col8 page_title"><h2>What is it that you're dealing with?</h2></div>
+	   			<button ng-click="issueBtn(issue)" class="col6 category_btn center"><h3>{{ issue.name }}</h3></button>
 	   			<div class="results_container">
 	   				<div ng-repeat="inspiration in inspirations">
-	   				<div class="col10 center"><h2>Be Inspired.</h2></div>
+	   				<div class="col8 center"><h2>Be Inspired.</h2></div>
 	   				<div class="result_name"><h3>by  {{ inspiration.name }}</h3></div>
 	   				<div class="photo_quote_container">
-	   				<div class="col6 result_photo"><img ng-src="{{ inspiration.image }}">
+	   				<div class="result_photo"><img ng-src="{{ inspiration.image }}">
 	   				</div>
-	   				<div class="col10 result_quote"><p id="quote_align">{{ inspiration.quote }}</p></div>
+	   				<div class="col8 result_quote"><p id="quote_align">{{ inspiration.quote }}</p></div>
 	   				</div>
 	   				</div>
 	   			</div>

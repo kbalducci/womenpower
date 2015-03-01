@@ -67,10 +67,11 @@ img {
 
 .wrapper {
     width: 90%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
 }
+
 
 .dash_btn {
     float: right;
@@ -84,7 +85,9 @@ img {
   margin-bottom: 2em;
   margin-top: 1em;
 }
-
+.menu_btn {
+    margin-top:2em;
+}
 /*============ forms/signin pages =============*/
     .sessions {
 
@@ -150,7 +153,7 @@ button {
 
 /*============= pages ==============*/
 .dashboard {
-    .col3, .col6, .col4, .col8, .col5 {
+    .col6 {
         @include specs;
         width: $global;
     }
@@ -187,7 +190,7 @@ button {
 }
 
 .categories {
-    .col4, .col8, .col10, .col5 {
+    .col4, .col6, .col8, .col5 {
         @include specs;
         width: $global;
     }
@@ -258,7 +261,7 @@ button {
     }
     .categories {
         .category_btn {
-            width: 60%;
+            width: 80%;
             display: block;
             margin: 0 auto;
             margin-bottom: 10px;
@@ -314,10 +317,10 @@ button {
         .col5 {
             @include grid(5);
         }
-        .col8 {
+        .col6 {
             @include grid(8);
         }
-        .col10 {
+        .col8 {
             @include grid(10);
             margin-right: 0;
         }
@@ -329,13 +332,15 @@ button {
         }
         .photo_quote_container {
             overflow: hidden;
-            .result_photo img {
-                width: 60%;
+            .result_photo {
+                width: 50%;
                 float: left;
                 margin-top: 0.75em;
             }
             .result_quote {
                 float: left;
+                width: 45%;
+                margin-left: 5%;
             }
         }
     }
