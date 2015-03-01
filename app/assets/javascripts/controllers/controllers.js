@@ -4,17 +4,33 @@ angular.module('app.controllers', [])
 .controller('InspirationCtrl', function($scope, $state) {
 })
 .controller('CategoryCtrl', function($scope, $state, $http) {
-	$http.get('/categories.json')
+	// $http.get('/categories.json')
+	// .success(function(response) {
+
+	// 	$scope.categories = response;
+	// 	console.log(response);
+
+	// 	$scope.categoryTitle = true;
+	// 	$scope.issueTitle = true;
+
+	// 	$scope.categoryShow = true;
+	// 	$scope.issueShow = true;
+
+	// })
+
+	$http.get('/categories/2.json')
 	.success(function(response) {
 
+		// if(response)
+
 		$scope.categories = response;
-		console.log(response);
+		// console.log(response);
 
-		$scope.categoryTitle = true;
-		$scope.issueTitle = true;
+		// $scope.categoryTitle = true;
+		// $scope.issueTitle = true;
 
-		$scope.categoryShow = true;
-		$scope.issueShow = true;
+		// $scope.categoryShow = true;
+		// $scope.issueShow = true;
 
 	})
 
