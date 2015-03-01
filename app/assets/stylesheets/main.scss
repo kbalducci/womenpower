@@ -1,3 +1,21 @@
+@import 'grid';
+
+@mixin specs {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/*Variables*/
+
+$global: 100%;
+$col: 6.29%;
+$gut: 2.22%;
+
+/*========================global=========================*/
+
 body { 
   background-color: rgb(9,83,104);
 
@@ -27,9 +45,9 @@ body {
       color: rgb(221, 221, 219);
     }
   }
-  
 }
 .btn {
+  display: block;
   background-color: rgb(9,83,104);
 }
 
@@ -38,6 +56,30 @@ button {
   border: 3px solid white;
   border-radius: 5px;
 }
+.forms {
+  margin: 0 auto;
+  text-align: center;
+ input {
+  margin: 0 auto;
+  margin-bottom: 3em; 
+  width: 50%;
+  height: 2.5em;
+  display: block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 0.5em solid white;
+ }
+   label {
+    color: white;
+    font-family: "museo-slab", sans-serif;
+    margin-bottom: 0.5em;
+    display: block;
+  }
+  .boolean {
+    margin-bottom: 0;
+  }
+}
+
 .wrapper {
   // background-color: rgb(9,83,104);
   width: 90%;
@@ -48,24 +90,8 @@ button {
 .dash_btn {
   float: right;
 }
-@import 'grid';
 
-@mixin specs {
-  box-sizing: border-box;
-  display: inline-block;
-  padding: 10px;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-/*Variables*/
-
-$global: 100%;
-$col: 6.29%;
-$gut: 2.22%;
-
-/*========================global=========================*/
-
+/*============= pages ==============*/
 .dashboard {
 
   .col3, .col6, .col4, .col8, .col5 {
