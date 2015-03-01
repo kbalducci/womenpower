@@ -1,5 +1,5 @@
 == README
-# February 26th Hackathon
+= February 26th Hackathon
 
 ## Description
 *Get Inspired* is an app designed to inspire women facing various issues in multiple aspects of their lives (personal, student, professional).
