@@ -11,7 +11,6 @@ angular.module('app.controllers', [])
 		console.log(response);
 
 		$scope.categoryTitle = true;
-		// $scope.issueTitle = false;
 
 		$scope.categoryShow = true;
 		$scope.issueShow = true;
