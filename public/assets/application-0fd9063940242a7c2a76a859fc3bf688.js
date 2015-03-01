@@ -41252,6 +41252,28 @@ angular.module('app.controllers', [])
 		$scope.issueShow = true;
 
 	})
+	// console.log('test');
+
+	// $http.get('/kjhkjh.json')
+	// .success(function(response) {
+
+	// 	console.log(response);
+	// 	console.log(response.message);
+
+	// 	if(response.message) {
+	// 		$scope.displayError = response.message;
+	// 	}
+
+		// $scope.categories = response;
+		// console.log(response);
+
+		// $scope.categoryTitle = true;
+		// $scope.issueTitle = true;
+
+		// $scope.categoryShow = true;
+		// $scope.issueShow = true;
+
+	// })
 
 	$scope.categoryBtn = function(category) {
 		console.log(category);
@@ -41308,12 +41330,12 @@ angular.module('app', ['app.controllers', 'ui.router'])
 		templateUrl: "templates/dashboard.html",
 		controller: "DashboardCtrl"
 	})
-	$stateProvider
-	.state('inspiration', {
-		url: "/inspiration",
-		templateUrl: "templates/inspiration.html",
-		controller: "InspirationCtrl"
-	})
+	// $stateProvider
+	// .state('inspiration', {
+	// 	url: "/inspiration",
+	// 	templateUrl: "templates/inspiration.html",
+	// 	controller: "InspirationCtrl"
+	// })
 	$stateProvider
 	.state('category', {
 		url: "/category",
