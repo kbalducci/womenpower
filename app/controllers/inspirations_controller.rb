@@ -2,6 +2,8 @@ class InspirationsController < ApplicationController
 
   def index
     render json: Inspiration.all.to_json(:methods => :image)
+    rescue StandardError => e
+      render json: { message: e.message, status: 404 }.to_json, status: 404
   end
 
   def create
