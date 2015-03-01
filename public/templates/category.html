@@ -15,10 +15,10 @@
 	   	</button>
 	</div>
 
+	<div ng-show="issueTitle" class="col10 page_title">
+		<h2>What kind of issue are you having?<h2>
+	</div>
 	<div ng-repeat="issue in issues">
-		<div ng-show="issueTitle" class="col10 page_title">
-			<h2>What kind of issue are you having?<h2>
-		</div>
 		<button ng-click="issueBtn(issue.id)" ng-show="issueShow" class="col8 category_btn center">
 			<h3>{{ issue.name }}</h3>
 		</button>

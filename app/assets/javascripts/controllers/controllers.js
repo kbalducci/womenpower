@@ -8,7 +8,7 @@ angular.module('app.controllers', [])
 	.success(function(response) {
 
 		$scope.categories = response;
-		// console.log(response);
+		console.log(response);
 
 		$scope.categoryTitle = true;
 		$scope.issueTitle = true;
@@ -19,7 +19,7 @@ angular.module('app.controllers', [])
 	})
 
 	$scope.categoryBtn = function(category) {
-		// console.log(category);
+		console.log(category);
 		$http.get('/categories/1/issues.json')
 		.success(function(response) {
 			$scope.categoryShow = false;
@@ -28,7 +28,7 @@ angular.module('app.controllers', [])
 			$scope.issues = [];
 
 			for(var i = 0; i<response.length; i++) {
-				if(response[i].id === category) {
+				if(response[i].category_id === category) {
 					$scope.issues.push(response[i])
 				}
 			}
@@ -37,7 +37,7 @@ angular.module('app.controllers', [])
 	}
 
 	$scope.issueBtn = function(issue) {
-		// console.log(issue);
+		console.log(issue);
 		$http.get('/inspirations.json')
 		.success(function(response) {
 			$scope.issueTitle = false;
@@ -48,7 +48,7 @@ angular.module('app.controllers', [])
 			$scope.inspirations = [];
 
 			for(var i = 0; i<response.length; i++) {
-				if(response[i].id === issue) {
+				if(response[i].issue_id === issue) {
 					$scope.inspirations.push(response[i])
 				}
 			}
