@@ -78,13 +78,26 @@ img {
 
     .menu_btn {
         float: left;
+        border: 2px solid $pcolor-grey;
+        border-radius: 5px;
+        background: $pcolor-grey;
+        box-shadow: 2px 2px 0px 0px #ad0149;
     }
     .menu {
         float: right;
+        border: 2px solid $pcolor-grey;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 2px 2px 0px 0px #ad0149;
+        background-color: $pcolor-grey;
+
     }
     .menu_btn a, .menu a{
-        width: 8em;
-        font-size: 1.25em;
+        width: 9em;
+        font-size: 1em;
+        color: $bgcolor-teal;
+        padding: 3px;
+        font-weight: 600;
     }
 }
 
@@ -100,6 +113,17 @@ img {
   margin-bottom: 2em;
   margin-top: 1em;
 }
+
+.footer_line {
+  clear: both;
+  width: 70%;
+  margin: 0 auto;
+  height: 0.25em;
+  background: #ad0149;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
 
 /*============ forms/signin pages =============*/
     .sessions {
@@ -215,6 +239,7 @@ button {
         box-shadow: none;
     }
     .category_btn {
+        margin-bottom: 3em;
         position: relative;
         margin-top: 10%;
         background: #095368;
@@ -282,7 +307,7 @@ button {
             width: 80%;
             display: block;
             margin: 0 auto;
-            margin-bottom: 10px;
+            margin-bottom: 3em;
         }
         .page_title {
             width: 80%;
