@@ -33,10 +33,10 @@ body {
         text-align: center;
     }
     h1 {
-        font-size: 3.5em;
+        font-size: 3em;
     }
     h2 {
-        font-size: 3em;
+        font-size: 2.75em;
     }
     h3 {
         font-family: "museo-slab", sans-serif;
@@ -116,7 +116,7 @@ img {
 
 .footer_line {
   clear: both;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   height: 0.25em;
   background: #ad0149;
@@ -199,6 +199,7 @@ button {
     .quiz_btn {
         position: relative;
         margin: 3em 0;
+        max-width: 500px;
         background: #095368;
         border: 4px solid white;
         padding: 20px;
@@ -218,6 +219,18 @@ button {
             -moz-transition: all .4s ease-in-out;
             -webkit-transition: all .4s ease-in-out;
         }
+        .quiz_btn {
+            margin: 0 auto;
+            margin-top: 3em;
+            margin-bottom: 2em;
+        }
+                .center {
+            margin: 0 auto;
+            display: block;
+        }
+        button {
+            margin-bottom: 3em;
+        }
     }
     .logo {
         // margin-bottom: 6em;
@@ -233,15 +246,17 @@ button {
         @include specs;
         width: $global;
     }
+    .category_btn button {
+        margin-bottom: 3em;
+    }
     .btn {
         background: white;
         border-right: 5px;
         box-shadow: none;
     }
     .category_btn {
-        margin-bottom: 3em;
         position: relative;
-        margin-top: 10%;
+        margin-bottom: 3em;
         background: #095368;
         border: 4px solid white;
         padding: 20px;
@@ -268,6 +283,10 @@ button {
     .results_container {
         width: 80%;
         margin: 0 auto;
+        
+    .photo_quote_container {
+        margin: 2em 0;
+    }
         h1, h2, h3 {
             text-align: center;
         }
@@ -297,9 +316,10 @@ button {
             &:last-of-type {
                 margin-right: 0;
             }
-                .col6 {
-                @include grid(6);
-    }
+            .quiz_btn {
+            margin: 0 auto;
+            display: block;
+        }
         }
     }
     .categories {
@@ -316,7 +336,9 @@ button {
         .center {
             margin: 0 auto;
             display: block;
-            margin-bottom: 5px;
+        }
+        .cat_margin {
+        margin-bottom: 3em;
         }
         .powered_by {
             width: 40%;
@@ -352,6 +374,9 @@ button {
             display: block;
             margin-bottom: 5px;
         }
+        .cat_margin {
+        margin-bottom: 3em;
+        }
         .quiz_btn {
         margin-top: 3em; 
         }
@@ -374,7 +399,9 @@ button {
         .center {
             margin: 0 auto;
             display: block;
-            margin-bottom: 5px;
+        }
+        .cat_margin {
+        margin-bottom: 3em;
         }
         .photo_quote_container {
             overflow: hidden;
@@ -383,12 +410,14 @@ button {
                 width: 50%;
                 float: left;
                 margin-top: 0.75em;
+                margin-bottom: 3em;
 
             }
             .result_quote {
                 float: left;
                 width: 45%;
                 margin-left: 5%;
+                margin-bottom: 3em;
             }
         }
     }
