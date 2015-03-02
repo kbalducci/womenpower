@@ -17,11 +17,11 @@ body h1, body h2 {
 }
 /* line 35, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 body h1 {
-  font-size: 3.5em;
+  font-size: 3em;
 }
 /* line 38, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 body h2 {
-  font-size: 3em;
+  font-size: 2.75em;
 }
 /* line 41, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 body h3 {
@@ -33,7 +33,7 @@ body h3 {
 body p {
   font-family: "museo-slab", sans-serif;
   color: #dddddb;
-  font-size: 1.25em;
+  font-size: 1.2em;
   line-height: 1.5em;
 }
 /* line 52, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
@@ -112,7 +112,7 @@ img {
 /* line 117, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .footer_line {
   clear: both;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   height: 0.25em;
   background: #ad0149;
@@ -200,9 +200,20 @@ img {
   width: 100%;
 }
 /* line 199, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+.dashboard .center {
+  margin: 0 auto;
+  display: block;
+}
+/* line 203, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+.dashboard .p_wrap {
+  max-width: 700px;
+}
+/* line 206, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .dashboard .quiz_btn {
   position: relative;
-  margin: 3em 0;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  max-width: 500px;
   background: #095368;
   border: 4px solid white;
   padding: 20px;
@@ -215,7 +226,7 @@ img {
   text-transform: uppercase;
   border-radius: 8px;
 }
-/* line 213, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+/* line 222, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .dashboard .quiz_btn:hover {
   top: 4px;
   box-shadow: none;
@@ -223,16 +234,20 @@ img {
   -moz-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
 }
-/* line 222, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+/* line 231, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+.dashboard .quiz_btn button {
+  margin-bottom: 3em;
+}
+/* line 235, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .dashboard .logo {
   margin-top: 5em;
 }
-/* line 226, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+/* line 239, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .dashboard .header_line {
   margin-bottom: 3em;
 }
 
-/* line 232, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+/* line 245, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .categories .col4, .categories .col6, .categories .col8, .categories .col5 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -243,17 +258,20 @@ img {
   text-align: center;
   width: 100%;
 }
-/* line 236, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+/* line 249, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+.categories .category_btn button {
+  margin-bottom: 3em;
+}
+/* line 252, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .categories .btn {
   background: white;
   border-right: 5px;
   box-shadow: none;
 }
-/* line 241, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+/* line 257, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .categories .category_btn {
-  margin-bottom: 3em;
   position: relative;
-  margin-top: 10%;
+  margin-bottom: 3em;
   background: #095368;
   border: 4px solid white;
   padding: 20px;
@@ -266,7 +284,7 @@ img {
   text-transform: uppercase;
   border-radius: 8px;
 }
-/* line 256, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+/* line 271, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .categories .category_btn:hover {
   top: 4px;
   box-shadow: none;
@@ -274,36 +292,48 @@ img {
   -moz-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
 }
-/* line 265, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+/* line 280, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .categories .category_container h2 {
   margin-right: 0;
 }
-/* line 268, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+/* line 283, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .categories .results_container {
   width: 80%;
   margin: 0 auto;
 }
-/* line 271, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+/* line 287, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+.categories .results_container .photo_quote_container {
+  margin: 2em 0;
+}
+/* line 290, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .categories .results_container h1, .categories .results_container h2, .categories .results_container h3 {
   text-align: center;
 }
-/* line 274, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+/* line 293, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .categories .results_container .result_photo img {
   border: 4px solid white;
   border-radius: 8px;
 }
-/* line 278, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+/* line 297, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .categories .results_container #quote_align {
   text-align: left;
 }
-/* line 281, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+/* line 300, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
 .categories .results_container .header_line {
   margin-bottom: 6em;
+}
+/* line 304, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+.categories .powered_by {
+  margin-bottom: 2em;
+}
+/* line 307, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+.categories .page_title h2 {
+  margin-top: 0.5em;
 }
 
 /* ========================= medium ============================*/
 @media screen and (min-width: 550px) {
-  /* line 291, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 316, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .inspiration {
     display: block;
     width: 45%;
@@ -311,35 +341,42 @@ img {
     float: left;
     margin-bottom: 5px;
   }
-  /* line 297, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 322, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .inspiration:last-of-type {
     margin-right: 0;
   }
-  /* line 300, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
-  .dashboard .inspiration .col6 {
-    width: 48.84%;
-    margin-right: 2.22%;
+  /* line 325, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  .dashboard .inspiration .center {
+    margin: 0 auto;
+    display: block;
+  }
+  /* line 329, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  .dashboard .inspiration .quiz_btn {
+    margin: 0 auto;
   }
 
-  /* line 306, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 336, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .categories .category_btn {
     width: 80%;
     display: block;
     margin: 0 auto;
     margin-bottom: 3em;
   }
-  /* line 312, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 342, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .categories .page_title {
     width: 80%;
     display: inline;
   }
-  /* line 316, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 346, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .categories .center {
     margin: 0 auto;
     display: block;
-    margin-bottom: 5px;
   }
-  /* line 321, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 350, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  .categories .cat_margin {
+    margin-bottom: 3em;
+  }
+  /* line 353, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .categories .powered_by {
     width: 40%;
     display: block;
@@ -347,96 +384,110 @@ img {
 }
 /* ========================== large ==========================*/
 @media screen and (min-width: 900px) {
-  /* line 332, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 364, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .col2 {
     width: 14.8%;
     margin-right: 2.22%;
   }
-  /* line 335, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 367, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .col3 {
     width: 23.31%;
     margin-right: 2.22%;
   }
-  /* line 338, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 370, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .col6 {
     width: 48.84%;
     margin-right: 2.22%;
   }
-  /* line 341, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 373, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .col5 {
     width: 40.33%;
     margin-right: 2.22%;
   }
-  /* line 344, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 376, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .col4 {
     width: 31.82%;
     margin-right: 2.22%;
   }
-  /* line 347, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 379, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .col8 {
     width: 65.86%;
     margin-right: 2.22%;
   }
-  /* line 350, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 382, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .center {
     margin: 0 auto;
     display: block;
     margin-bottom: 5px;
   }
-  /* line 355, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 387, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  .dashboard .cat_margin {
+    margin-bottom: 3em;
+  }
+  /* line 390, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .quiz_btn {
+    margin: 0 auto;
     margin-top: 3em;
   }
 
-  /* line 359, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 395, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .categories {
     /*Why do I need this in both media queries*/
   }
-  /* line 360, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 396, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .categories .col4 {
     width: 31.82%;
     margin-right: 2.22%;
   }
-  /* line 363, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 399, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .categories .col5 {
     width: 40.33%;
     margin-right: 2.22%;
   }
-  /* line 366, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 402, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .categories .col6 {
     width: 65.86%;
     margin-right: 2.22%;
   }
-  /* line 369, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 405, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .categories .col8 {
     width: 82.88%;
     margin-right: 2.22%;
     margin-right: 0;
   }
-  /* line 374, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 409, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  .categories h2 {
+    font-size: 3em;
+  }
+  /* line 413, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .categories .center {
     margin: 0 auto;
     display: block;
-    margin-bottom: 5px;
   }
-  /* line 379, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 417, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  .categories .cat_margin {
+    margin-bottom: 3em;
+  }
+  /* line 420, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .categories .photo_quote_container {
     overflow: hidden;
   }
-  /* line 382, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 423, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .categories .photo_quote_container .result_photo {
     width: 50%;
     float: left;
     margin-top: 0.75em;
+    margin-bottom: 3em;
   }
-  /* line 388, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 430, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .categories .photo_quote_container .result_quote {
     float: left;
     width: 45%;
     margin-left: 5%;
+    margin-bottom: 3em;
   }
 
-  /* line 395, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
+  /* line 438, /Users/kbalducci/theironyard/week_8/thursday/womenpower/app/assets/stylesheets/main.scss */
   .footer {
     clear: both;
   }
