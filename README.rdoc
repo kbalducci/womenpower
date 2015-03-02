@@ -10,11 +10,14 @@ Users create an account and then have access to our database of inspirational wo
 
 === App Features
 
-* User login with Devise
+* User login and authentication with Devise
 * Images stored using AWS Paperclip
+* Framework with AngularJS
 
 
 === Deliverables
 
 * Trello: https://trello.com/b/S13m1waO/weekend-hackathon
 * Heroku: https://women-power.herokuapp.com
+* Style Tiles for design typography, color and inspirations (/design_files)
+* Wireframes for design structure (/design_files)
