@@ -6,9 +6,9 @@ class CategoriesController < ApplicationController
       render json: { message: e.message, status: 500 }.to_json, status: 500
   end
 
-  private
-    def category_params
-      params.require(:category).permit(:name)
-    end
+  # private
+  #   def category_params
+  #     params.require(:category).permit(:name)
+  #   end
 
 end
