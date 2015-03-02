@@ -2,9 +2,9 @@
 ===February 26th Hackathon
 
 === Contributors:
-Lead Design: Dawn Delatte (https://github.com/dawndelatte)
-Lead Front End Developer: Erika Moller (https://github.com/erikadmoller)
-Back End Developer: Kate Balducci (https://github.com/kbalducci)
+* Lead Design: Dawn Delatte (https://github.com/dawndelatte)
+* Lead Front End Developer: Erika Moller (https://github.com/erikadmoller)
+* Back End Developer: Kate Balducci (https://github.com/kbalducci)
 
 === Description
 *Get Inspired* is an app designed to inspire women facing various issues in multiple aspects of their lives (personal, student, professional).
