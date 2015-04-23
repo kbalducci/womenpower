@@ -106,7 +106,7 @@ img {
 }
 
 .header_line {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   height: 0.25em;
   background: #ad0149;
@@ -116,7 +116,7 @@ img {
 
 .footer_line {
   clear: both;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   height: 0.25em;
   background: #ad0149;
@@ -132,7 +132,7 @@ img {
             margin-top: 2em;
         }
             .header_line {
-            width: 50%;
+            width: 80%;
   }
     
 button {
@@ -163,7 +163,7 @@ button {
         border-radius: 5px;
         border: 0.5em solid white;
     }
-    label, span {
+    label, span, a{
         color: white;
         font-family: "museo-slab", sans-serif;
         margin-bottom: 0.5em;
@@ -312,6 +312,7 @@ button {
 /* ========================= medium ============================*/
 
 @media screen and (min-width: 550px) {
+    .logo h1 {font-size: 5em;}
     .dashboard {
         .inspiration {
             display: block;
@@ -360,6 +361,7 @@ button {
 /* ========================== large ==========================*/
 
 @media screen and (min-width: 900px) {
+    .logo h1 {font-size: 6em;}
     .dashboard {
         .col2 {
             @include grid(2);

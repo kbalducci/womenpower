@@ -17,7 +17,7 @@ body h1, body h2 {
 }
 /* line 35, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
 body h1 {
-  font-size: 3em;
+  font-size: 3.25em;
 }
 /* line 38, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
 body h2 {
@@ -101,7 +101,7 @@ img {
 
 /* line 108, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
 .header_line {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   height: 0.25em;
   background: #ad0149;
@@ -112,7 +112,7 @@ img {
 /* line 117, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
 .footer_line {
   clear: both;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   height: 0.25em;
   background: #ad0149;
@@ -127,7 +127,7 @@ img {
 }
 /* line 134, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
 .sessions .header_line {
-  width: 50%;
+  width: 80%;
 }
 /* line 138, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
 .sessions button {
@@ -333,7 +333,12 @@ img {
 
 /* ========================= medium ============================*/
 @media screen and (min-width: 550px) {
-  /* line 316, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 315, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  .logo h1 {
+    font-size: 5em;
+  }
+
+  /* line 317, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .inspiration {
     display: block;
     width: 45%;
@@ -341,42 +346,42 @@ img {
     float: left;
     margin-bottom: 5px;
   }
-  /* line 322, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 323, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .inspiration:last-of-type {
     margin-right: 0;
   }
-  /* line 325, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 326, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .inspiration .center {
     margin: 0 auto;
     display: block;
   }
-  /* line 329, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 330, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .inspiration .quiz_btn {
     margin: 0 auto;
   }
 
-  /* line 336, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 337, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .category_btn {
     width: 80%;
     display: block;
     margin: 0 auto;
     margin-bottom: 3em;
   }
-  /* line 342, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 343, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .page_title {
     width: 80%;
     display: inline;
   }
-  /* line 346, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 347, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .center {
     margin: 0 auto;
     display: block;
   }
-  /* line 350, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 351, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .cat_margin {
     margin-bottom: 3em;
   }
-  /* line 353, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 354, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .powered_by {
     width: 40%;
     display: block;
@@ -385,101 +390,107 @@ img {
 /* ========================== large ==========================*/
 @media screen and (min-width: 900px) {
   /* line 364, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  .logo h1 {
+    font-size: 6em;
+  }
+
+  /* line 366, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .col2 {
     width: 14.8%;
     margin-right: 2.22%;
   }
-  /* line 367, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 369, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .col3 {
     width: 23.31%;
     margin-right: 2.22%;
   }
-  /* line 370, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 372, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .col6 {
     width: 48.84%;
     margin-right: 2.22%;
   }
-  /* line 373, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 375, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .col5 {
     width: 40.33%;
     margin-right: 2.22%;
   }
-  /* line 376, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 378, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .col4 {
     width: 31.82%;
     margin-right: 2.22%;
   }
-  /* line 379, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 381, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .col8 {
     width: 65.86%;
     margin-right: 2.22%;
   }
-  /* line 382, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 384, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .center {
     margin: 0 auto;
     display: block;
     margin-bottom: 5px;
   }
-  /* line 387, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 389, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .cat_margin {
     margin-bottom: 3em;
   }
-  /* line 390, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 392, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .dashboard .quiz_btn {
     margin: 0 auto;
     margin-top: 3em;
+    margin-bottom: 1em;
   }
 
-  /* line 395, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 398, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories {
     /*Why do I need this in both media queries*/
   }
-  /* line 396, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 399, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .col4 {
     width: 31.82%;
     margin-right: 2.22%;
   }
-  /* line 399, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 402, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .col5 {
     width: 40.33%;
     margin-right: 2.22%;
   }
-  /* line 402, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 405, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .col6 {
     width: 65.86%;
     margin-right: 2.22%;
   }
-  /* line 405, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 408, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .col8 {
     width: 82.88%;
     margin-right: 2.22%;
     margin-right: 0;
   }
-  /* line 409, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 412, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories h2 {
     font-size: 3em;
   }
-  /* line 413, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 416, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .center {
     margin: 0 auto;
     display: block;
   }
-  /* line 417, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 420, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .cat_margin {
     margin-bottom: 3em;
   }
-  /* line 420, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 423, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .photo_quote_container {
     overflow: hidden;
   }
-  /* line 423, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 426, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .photo_quote_container .result_photo {
     width: 50%;
     float: left;
     margin-top: 0.75em;
     margin-bottom: 3em;
   }
-  /* line 430, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 433, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .categories .photo_quote_container .result_quote {
     float: left;
     width: 45%;
@@ -487,7 +498,7 @@ img {
     margin-bottom: 3em;
   }
 
-  /* line 438, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
+  /* line 441, /Users/Dawn/Dropbox/iron_yard/womenpower/app/assets/stylesheets/main.scss */
   .footer {
     clear: both;
   }
