@@ -64,7 +64,7 @@ body {
 img {
     max-width: 100%;
 }
-
+.intro {text-align: center;}
 .wrapper {
     width: 90%;
     max-width: 1000px;
@@ -106,7 +106,7 @@ img {
 }
 
 .header_line {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   height: 0.25em;
   background: #ad0149;
@@ -131,9 +131,9 @@ img {
         .logo {
             margin-top: 2em;
         }
-            .header_line {
-            width: 80%;
-  }
+  //           .header_line {
+  //           width: 80%;
+  // }
     
 button {
     -webkit-appearance: none;
@@ -280,9 +280,11 @@ button {
     .category_container h2 {
         margin-right: 0;
     }
+
     .results_container {
         width: 80%;
         margin: 0 auto;
+        p{text-indent: -6px;}
         
     .photo_quote_container {
         margin: 2em 0;
@@ -312,6 +314,8 @@ button {
 /* ========================= medium ============================*/
 
 @media screen and (min-width: 550px) {
+
+
     .logo h1 {font-size: 5em;}
     .dashboard {
         .inspiration {
@@ -361,6 +365,7 @@ button {
 /* ========================== large ==========================*/
 
 @media screen and (min-width: 900px) {
+    .header_line {width: 80%;}
     .logo h1 {font-size: 6em;}
     .dashboard {
         .col2 {
